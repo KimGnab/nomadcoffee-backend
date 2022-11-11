@@ -12,22 +12,4 @@ export default gql`
     createdAt: String!
     updatedAt: String!
   }
-
-  type CreateAccountResponse {
-    ok: Boolean!
-    error: String
-  }
-
-  type Query {
-    seeProfile(username: String!): User
-  }
-
-  type Mutation {
-    createAccount(
-      username: String!
-      email: String!
-      name: String!
-      password: String!
-    ): CreateAccountResponse
-  }
 `;
